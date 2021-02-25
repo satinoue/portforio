@@ -15,8 +15,12 @@ $ vagrant box add generic/centos8   (注：時間かかる)
 $ vagrant init generic/centos8
 ```
 
-- vagrantファイル編集：下記をコメントアウト外す 
+- vagrantファイル編集
+
+Vagrantファイルを開いて、下記をコメントアウト外す 
+```
 config.vm.network "private_network", ip: "192.168.33.10"
+```
 
 - vagrant起動
 ```
